@@ -1,0 +1,27 @@
+<div class="menu-sidebar-content js-scrollbar1">
+  <nav class="navbar-sidebar">
+    <ul class="list-unstyled navbar-list">
+
+      <li *ngFor="let tmpProdCategory of productCategories">
+        <a routerLink="/category/{{ tmpProdCategory.id }}/{{ tmpProdCategory.categoryName }}" routerLinkActive="active-link">
+          {{ tmpProdCategory.categoryName }}
+        </a>
+      </li>
+
+    </ul>
+
+    <div class="search-container">
+      <h5>Having trouble figuring out for book<br>enter last book you have read for suggetions</h5>
+      <input #myInput
+             type="text"
+             placeholder="Last Book"
+             class="au-input au-input-small reduced-width"
+             name="search"
+             (keyup.enter)="doSearch(myInput.value)" />
+
+      <button (click)="doSearch(myInput.value)" class="au-btn-submit">
+        Submit
+      </button>
+    </div>
+  </nav>
+</div>

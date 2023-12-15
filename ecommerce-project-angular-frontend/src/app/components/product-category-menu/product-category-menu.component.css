@@ -1,0 +1,16 @@
+/*.menu-sidebar-content .navbar-sidebar .search-container .reduced-width {*/
+/*  width: 160px; !* Adjust the width as needed *!*/
+/*}*/
+.menu-sidebar-content .navbar-sidebar .search-container .reduced-width{
+  display: flex;
+  width: 100%;
+}
+
+.menu-sidebar-content .navbar-sidebar .search-container input {
+  flex: 1;
+  margin-right: 10px; /* Add margin for spacing between input and button */
+}
+
+.menu-sidebar-content .navbar-sidebar .search-container button {
+  width: 100px; /* Adjust the width of the button as needed */
+}
